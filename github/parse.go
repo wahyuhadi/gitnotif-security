@@ -11,11 +11,11 @@ import (
 func ParseResponseNotif(notif []*github.Notification) {
 	for _, notifinfo := range notif {
 		if *notifinfo.Reason == "security_alert" {
-			fmt.Println("[FOUND] Updated At	: ", *notifinfo.UpdatedAt)
-			fmt.Println("[FOUND] Repo 	: ", *notifinfo.Repository.HTMLURL)
-			fmt.Println("[FOUND] Owner	: ", *notifinfo.Repository.Owner.Login)
-			fmt.Println("[FOUND] Reason 	: ", *notifinfo.Reason)
-			fmt.Println("[FOUND] Title 	: ", *notifinfo.Subject.Title, "\n")
+			fmt.Println("[FOUND] Updated -> ", *notifinfo.UpdatedAt)
+			fmt.Println("[FOUND] Repo 	-> ", *notifinfo.Repository.HTMLURL)
+			fmt.Println("[FOUND] Owner	-> ", *notifinfo.Repository.Owner.Login)
+			fmt.Println("[FOUND] Reason  -> ", *notifinfo.Reason)
+			fmt.Println("[FOUND] Title 	-> ", *notifinfo.Subject.Title, "\n")
 		}
 	}
 }
