@@ -11,7 +11,8 @@ import (
 )
 
 var (
-	repo = flag.String("repo", "false", "for search in repo") // default value is false
+	repo    = flag.String("repo", "false", "for search in repo") // default value is false
+	verbose = flag.Bool("verbose", false, "Verbose mode")
 )
 
 func main() {
@@ -30,11 +31,16 @@ func main() {
 	)
 	tc := oauth2.NewClient(ctx, ts)
 
-	if *repo == "false" {
-		github.GetNotifications(tc)
-	}
+	if *verbose {
+		github.RepoVerbose(tc)
+	} else {
+		if *repo == "false" {
+			github.GetNotifications(tc)
+		}
 
-	if *repo != "false" {
-		github.NotifInRepo(tc, *repo)
+		if *repo != "false" {
+			github.NotifInRepo(tc, *repo)
+		}
+
 	}
 }

@@ -30,5 +30,5 @@ func GetNotifications(session *http.Client) {
 		fmt.Println(err)
 	}
 
-	ParseResponse(notif)
+	ParseResponseNotif(notif)
 }
