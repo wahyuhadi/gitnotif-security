@@ -5,21 +5,18 @@ import (
 	"net/http"
 
 	"fmt"
-	"time"
 
 	"github.com/google/go-github/github"
 ) // with go modules disabled
 
+// get notification in all repo
 func GetNotifications(session *http.Client) {
 	ctx := context.Background()
 	client := github.NewClient(session)
 
 	// Get 1 month -> since
-	now := time.Now()
-	then := now.AddDate(0, 0, -1).Format("2006-01-02T15:04:05:0700")
-	since, _ := time.Parse("2006-01-02", then)
-
-	// optional add for seach quety in github
+	since := TimeParse()
+	// optional add for seach query in github
 	opts := &github.NotificationListOptions{
 		All:   true,
 		Since: since,
