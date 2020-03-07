@@ -35,6 +35,6 @@ func main() {
 	}
 
 	if *repo != "false" {
-		github.NotifInRepo(*repo)
+		github.NotifInRepo(tc, *repo)
 	}
 }
