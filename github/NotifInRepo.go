@@ -30,5 +30,5 @@ func NotifInRepo(session *http.Client, repo string) {
 		fmt.Println(err)
 	}
 
-	ParseResponse(notif)
+	ParseResponseNotif(notif)
 }
