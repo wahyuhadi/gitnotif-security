@@ -15,8 +15,8 @@ import (
 var (
 	repo    = flag.String("repo", "false", "for search in repo") // default value is false
 	verbose = flag.Bool("verbose", false, "Verbose mode")
-
-	web = flag.Bool("web", false, "web mode")
+	csv     = flag.Bool("csv", false, "generate csv")
+	web     = flag.Bool("web", false, "web mode")
 )
 
 func main() {
@@ -43,7 +43,7 @@ func main() {
 		github.RepoVerbose(tc)
 	} else {
 		if *repo == "false" {
-			github.GetNotifications(tc)
+			github.GetNotifications(tc, *csv)
 		}
 
 		if *repo != "false" {

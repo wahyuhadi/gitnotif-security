@@ -1,0 +1,33 @@
+Repo,Owner," Title",Reason
+https://github.com/tiket/TIX-EVENTS-ORDER,tiket,Bump jackson-databind from 2.9.9 to 2.9.10.3,security_alert
+https://github.com/tiket/DATA-RANGERS-ORBITS,tiket,Bump jackson-databind from 2.9.7 to 2.9.10.3 in /nebula/nifi-commons/nifi-expression-language,security_alert
+https://github.com/tiket/DATA-RANGERS-ORBITS,tiket,Potential security vulnerability found in the com.fasterxml.jackson.core:jackson-databind dependency,security_alert
+https://github.com/tiket/TIX-EVENTS-ORDER,tiket,Potential security vulnerability found in the com.fasterxml.jackson.core:jackson-databind dependency,security_alert
+https://github.com/tiket/DATA-RANGERS-ORBITS,tiket,Potential security vulnerability found in the com.fasterxml.jackson.core:jackson-databind dependency,security_alert
+https://github.com/tiket/TIX-EVENTS-ORDER,tiket,Potential security vulnerability found in the com.fasterxml.jackson.core:jackson-databind dependency,security_alert
+https://github.com/tiket/TIX-LOYALTY-CORE-BE-DATA-MIGRATION,tiket,Potential security vulnerability found in the com.fasterxml.jackson.core:jackson-databind dependency,security_alert
+https://github.com/tiket/TIX-LOYALTY-CLI,tiket,Potential security vulnerability found in the com.fasterxml.jackson.core:jackson-databind dependency,security_alert
+https://github.com/tiket/TIX-LOYALTY-CORE-BE-DATA-MIGRATION,tiket,Potential security vulnerability found in the com.fasterxml.jackson.core:jackson-databind dependency,security_alert
+https://github.com/tiket/TIX-LOYALTY-CLI,tiket,Potential security vulnerability found in the com.fasterxml.jackson.core:jackson-databind dependency,security_alert
+https://github.com/tiket/TIX-FLIGHT-CART-MIGRATION,tiket,Potential security vulnerability found in the org.codehaus.jackson:jackson-mapper-asl dependency,security_alert
+https://github.com/tiket/TIX-MEMBERS-CORE-BE,tiket,Bump retrofit.version from 2.3.0 to 2.7.2,security_alert
+https://github.com/tiket/TIX-WEB-AUTOMATION,tiket,Bump rake from 12.1.0 to 12.3.3,security_alert
+https://github.com/tiket/TIX-WEB-AUTOMATION,tiket,Potential security vulnerability found in the rake dependency,security_alert
+https://github.com/tiket/TIX-FLIGHT-SEO-BE,tiket,Bump retrofit.version from 2.3.0 to 2.7.2,security_alert
+https://github.com/tiket/TIX-FLIGHT-SEO-BE,tiket,Potential security vulnerability found in the com.squareup.retrofit2:retrofit dependency,security_alert
+https://github.com/tiket/TIX-FLIGHT-SEO-BE,tiket,Potential security vulnerability found in the com.squareup.retrofit2:retrofit dependency,security_alert
+https://github.com/tiket/TIX-ANSIDEV,tiket,chore(deps): bump ansible from 2.7.12 to 2.7.16,security_alert
+https://github.com/tiket/TIX-ANSIDEV,tiket,Potential security vulnerability found in the ansible dependency,security_alert
+https://github.com/tiket/TIX-FLIGHT-JETSTAR-INTEGRATOR-BE,tiket,Bump retrofit.version from 2.4.0 to 2.7.1,security_alert
+https://github.com/tiket/TIX-FLIGHT-JETSTAR-INTEGRATOR-BE,tiket,Potential security vulnerability found in the com.squareup.retrofit2:retrofit dependency,security_alert
+https://github.com/tiket/TIX-FLIGHT-JETSTAR-INTEGRATOR-BE,tiket,Potential security vulnerability found in the com.squareup.retrofit2:retrofit dependency,security_alert
+https://github.com/tiket/TIX-TRAIN-SEO-BE,tiket,Bump retrofit.version from 2.3.0 to 2.7.1,security_alert
+https://github.com/tiket/TIX-TRAIN-SEO-BE,tiket,Bump hibernate-validator from 6.0.5.Final to 6.1.0.Final,security_alert
+https://github.com/tiket/TIX-TRAIN-SEO-BE,tiket,Potential security vulnerability found in the org.hibernate.validator:hibernate-validator dependency,security_alert
+https://github.com/tiket/TIX-TRAIN-SEO-BE,tiket,Potential security vulnerability found in the com.squareup.retrofit2:retrofit dependency,security_alert
+https://github.com/tiket/TIX-TRAIN-SEO-BE,tiket,Potential security vulnerability found in the com.squareup.retrofit2:retrofit dependency,security_alert
+https://github.com/tiket/TIX-LOCATION-SERVICE-BE,tiket,Bump retrofit.version from 2.3.0 to 2.7.1,security_alert
+https://github.com/tiket/TIX-LOCATION-SERVICE-BE,tiket,Bump hibernate-validator from 6.0.5.Final to 6.1.0.Final,security_alert
+https://github.com/tiket/TIX-LOCATION-SERVICE-BE,tiket,Potential security vulnerability found in the org.hibernate.validator:hibernate-validator dependency,security_alert
+https://github.com/tiket/TIX-LOCATION-SERVICE-BE,tiket,Potential security vulnerability found in the com.squareup.retrofit2:retrofit dependency,security_alert
+https://github.com/tiket/TIX-LOCATION-SERVICE-BE,tiket,Potential security vulnerability found in the com.squareup.retrofit2:retrofit dependency,security_alert

@@ -1,8 +1,10 @@
 package github
 
 import (
+	"encoding/csv"
 	"fmt"
 	"net/http"
+	"os"
 
 	"github.com/google/go-github/github"
 )
@@ -25,4 +27,27 @@ func ParseResponseListRepo(session *http.Client, repos []*github.Repository) {
 		fmt.Println("[+] Repo Name Scan ", *repo.Name)
 		NotifInRepo(session, *repo.Name)
 	}
+}
+
+// Generate CSV  from response
+func GenerateCsv(notif []*github.Notification) {
+	file, err := os.OpenFile("test.csv", os.O_CREATE|os.O_WRONLY, 0777)
+	defer file.Close()
+
+	if err != nil {
+		os.Exit(1)
+	}
+
+	strWrite := [][]string{{"Repo", "Owner", " Title", "Reason"}}
+	for _, notifinfo := range notif {
+		if *notifinfo.Reason == "security_alert" {
+			add := []string{*notifinfo.Repository.HTMLURL, *notifinfo.Repository.Owner.Login, *notifinfo.Subject.Title, *notifinfo.Reason}
+			strWrite = append(strWrite, add)
+		}
+	}
+
+	csvWriter := csv.NewWriter(file)
+	csvWriter.WriteAll(strWrite)
+	csvWriter.Flush()
+
 }
