@@ -10,7 +10,7 @@ import (
 ) // with go modules disabled
 
 // get notification in all repo
-func GetNotifications(session *http.Client) {
+func GetNotifications(session *http.Client, csv bool) {
 	ctx := context.Background()
 	client := github.NewClient(session)
 
@@ -31,4 +31,7 @@ func GetNotifications(session *http.Client) {
 	}
 
 	ParseResponseNotif(notif)
+	if csv {
+		GenerateCsv(notif)
+	}
 }
